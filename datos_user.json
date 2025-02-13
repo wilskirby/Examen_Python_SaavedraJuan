@@ -1,15 +1,11 @@
 {
-   "Datos user":{
-
-    "Nombre completo": "Juan",
-    "Direccion": "",
-    "Contacto": "",
-    "Años":"",
-    "Servicio": ["Datos, Casa, Wi-fi,etc..."]
-
-   }
-
-
-
-
+    "Datos user": {
+        "Nombre completo": "Juan",
+        "Direccion": "",
+        "Contacto": "",
+        "Años": "",
+        "Servicio": [
+            "Datos, Casa, Wi-fi,etc..."
+        ]
+    }
 }
