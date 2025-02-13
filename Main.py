@@ -1,5 +1,5 @@
 import json
-import register_user
+import users
 import movistar
 
 
@@ -11,10 +11,12 @@ print ("Elije tu rol:")
 print ("1. Usuario")
 print ("2. Movistar")
 print ("3. Salir del programa")
+print (20 * ("-"))
 
 opc = input (":")
 if opc == "1":
-    register_user.menu_user()
+    users.menu_user()
     
 elif opc == "2":
     movistar.menu_movistar()
+

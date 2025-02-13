@@ -1,9 +1,9 @@
 {
     "Planes": {
         "Servicio": [
-            "Fibra Optica"
-            ,"Planes pospago"
-            ,"Planes prepago"
+            "Fibra Optica: Tiene un valor de $ 20.000 el mes"
+            ,"Pospago: Tiene un valor de $ 15.000 el mes"
+            ,"Prepago: Tiene un valor de $ 18.000 el mes"
         ]
     }
 }

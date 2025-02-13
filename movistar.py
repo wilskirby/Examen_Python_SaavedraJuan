@@ -15,18 +15,37 @@ datos_user=abrirdatosJSON()
 def menu_movistar():
     print (20 * ("-"))
     print ("\nBienvenido Movistar")
+    print ("Que deseas realizar?")
+    print("1. Agregar un usuario")
+    print ("2. Ver todos los usuarios")
     print (20 * ("-"))
+    while True:
+        opt=input(":")
+
+        if (opt == "1"):
+            print (20 * ("-"))
+            aguser ()
+
+        elif (opt == "2"):
+            ver_users()
 
 
 
-menu_movistar()
 
 def aguser():
             for i in range(len(datos_user["Datos user"]["Nombre completo"])):
 
                 nuevouser=input ("Nombre completo del Usuario: ")
-                datos_user[i]["Datos user"]["Nombre completo"].append(nuevouser)
+                datos_user["Datos user"]["Nombre completo"][i].append(nuevouser)
              ## AÑadir algo al JSON pero algo estoy haciendo mal mhmmhmhmhmhmhmhm
 
 
             guardardatosJSON()
+
+def ver_users():
+        for i in range(len(datos_user["Datos user"])):
+            print (datos_user["Datos user"]["Nombre completo"])
+            print (datos_user["Datos user"]["Direccion"])   
+            print (datos_user["Datos user"]["Contacto"])
+            print (datos_user["Datos user"]["Años"])
+            print (datos_user["Datos user"]["Servicio"])

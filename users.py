@@ -15,18 +15,20 @@ planes_user=abrirplanesJSON()
 def ver_planes():
     for i in range(len(planes_user["Planes"]["Servicio"])):
         print(planes_user["Planes"]["Servicio"][i])
+        print (20 * ("-"))
 
 def menu_user():
     print ("---Menu User---")
     print ("Hola User, que deseas hacer?")
-    print ("1. Ver planes: ")
+    print ("1. Ver planes")
     print ("2. Cerrar programa")
 
-while True:
-    opt=input(":")
+    while True:
+        opt=input(":")
 
-    if (opt == "1"):
-        ver_planes ()
-    
-    elif (opt == "2"):
-        break
+        if (opt == "1"):
+            print (20 * ("-"))
+            ver_planes ()
+
+        elif (opt == "2"):
+            break
